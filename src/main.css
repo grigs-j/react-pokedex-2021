@@ -1,0 +1,182 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+main {
+  padding-bottom: 4rem;
+}
+
+h1 {
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.pokeapi-img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto 1rem;
+}
+
+.pokecard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[autofill];
+      grid-template-columns: repeat(autofill, 1fr);
+  text-align: center;
+  text-transform: uppercase;
+  border: #333 2px solid;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.pokecard img {
+  height: 190px;
+  width: 220px;
+}
+
+.pokecard p {
+  margin: 0;
+}
+
+.pokecard .card-number {
+  position: relative;
+  z-index: 1;
+  font-size: 1.25rem;
+  padding: 0.3rem 0;
+}
+
+.pokecard .card-number::after {
+  z-index: 2;
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 0;
+  left: 48%;
+  height: 2rem;
+  width: 2rem;
+  background-image: url("./images/pokeball.png");
+}
+
+.pokecard .card-name {
+  font-size: 1.5rem;
+}
+
+.pokecard .card-type {
+  font-size: 0.825;
+}
+
+button {
+  display: block;
+  border: 2px solid #333;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  line-height: 50px;
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.normal {
+  background-color: #fdf7f7;
+}
+
+.grass {
+  background-color: #55924f;
+}
+
+.fire {
+  background-color: #92594f;
+}
+
+.water {
+  background-color: #4f5992;
+}
+
+.bug {
+  background-color: #7e924f;
+}
+
+.electric {
+  background-color: #ccd85d;
+}
+
+.poison {
+  background-color: #614f92;
+}
+
+.psychic {
+  background-color: #8d4f92;
+}
+
+.fairy {
+  background-color: #7b7c81;
+}
+
+.ground {
+  background-color: #5c5242;
+}
+
+.fighting {
+  background-color: #472727;
+}
+
+.ghost {
+  background-color: #191949;
+}
+
+.dragon {
+  background-color: #683a10;
+}
+/*# sourceMappingURL=main.css.map */
