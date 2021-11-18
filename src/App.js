@@ -83,7 +83,6 @@ function App() {
                         type={pokemon.types[0].type.name}
                     />
                 ))}
-                )
             </div>
         </main>
     );
